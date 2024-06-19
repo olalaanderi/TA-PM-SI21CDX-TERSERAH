@@ -12,6 +12,7 @@ import com.example.tiketku.R;
 public class Penginapan extends AppCompatActivity {
 
     Toolbar toolbar;
+    Button btnCheckout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,14 @@ public class Penginapan extends AppCompatActivity {
             public void onClick(View view) {
                 Intent Home = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(Home);
+            }
+        });
+
+        btnCheckout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent BukaPemesanan = new Intent(getApplicationContext(), pemesanan.class);
+                startActivity(BukaPemesanan);
             }
         });
     }
