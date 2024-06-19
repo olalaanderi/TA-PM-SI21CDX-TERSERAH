@@ -24,5 +24,13 @@ public class PesanTiket extends AppCompatActivity {
                 startActivity(Home);
             }
         });
+
+        btnCheckout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent BukaPemesanan = new Intent(getApplicationContext(), pemesanan.class);
+                startActivity(BukaPemesanan);
+            }
+        });
     }
 }
