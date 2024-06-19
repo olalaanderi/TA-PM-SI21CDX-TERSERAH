@@ -12,6 +12,7 @@ import com.example.tiketku.R;
 public class PesanTiket extends AppCompatActivity {
 
     Toolbar toolbar;
+    Button btnCheckout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
